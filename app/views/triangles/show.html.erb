@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Adjacent leg:</strong>
+  <%= @triangle.adjacent_leg %>
+</p>
+
+<p>
+  <strong>Opposite leg:</strong>
+  <%= @triangle.opposite_leg %>
+</p>
+
+<p>
+  <strong>Hypotenuse:</strong>
+  <%= @triangle.hypotenuse %>
+</p>
+
+<%= link_to 'Edit', edit_triangle_path(@triangle) %> |
+<%= link_to 'Back', triangles_path %>

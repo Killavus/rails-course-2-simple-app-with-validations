@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adjacent_leg: 1.5
+  opposite_leg: 1.5
+  hypotenuse: 1.5
+
+two:
+  adjacent_leg: 1.5
+  opposite_leg: 1.5
+  hypotenuse: 1.5

@@ -1,0 +1,29 @@
+<%= form_for(@triangle) do |f| %>
+  <% if @triangle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@triangle.errors.count, "error") %> prohibited this triangle from being saved:</h2>
+
+      <ul>
+      <% @triangle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :adjacent_leg %><br>
+    <%= f.text_field :adjacent_leg %>
+  </div>
+  <div class="field">
+    <%= f.label :opposite_leg %><br>
+    <%= f.text_field :opposite_leg %>
+  </div>
+  <div class="field">
+    <%= f.label :hypotenuse %><br>
+    <%= f.text_field :hypotenuse %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
